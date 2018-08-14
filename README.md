@@ -1,5 +1,5 @@
 # The-Diary-of-Learning-Android
-The journey of learning android
+基于《第一行代码》第二版的学习经历
 ## 第一次学习
 1.代码
 ### FirstActivity
