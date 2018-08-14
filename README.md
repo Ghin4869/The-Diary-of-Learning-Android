@@ -66,7 +66,7 @@ public class FirstActivity extends AppCompatActivity {
         });
     }
 }
-###SecondActivity
+### SecondActivity
 package com.example.activitytest;
 
 import android.content.Intent;
