@@ -49,8 +49,8 @@ public class FirstActivity extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                Intent intent=new Intent(FirstActivity.this, FirstActivity.class);
-                startActivity(intent);
+                Intent intent=new Intent(FirstActivity.this, SecondActivity.class);
+                startActivityForResult(intent,1);
         }
         });
     }
@@ -71,9 +71,16 @@ public class SecondActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.second_layout);
-        Intent intent=getIntent();
-        String data=intent.getStringExtra("extra_data");
-        Log.d("SecondActivity", data);
+        Button button2=(Button)findViewById(R.id.button_2);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent();
+                intent.putExtra("data_return", "Hello FirstActivity");
+                setResult(RESULT_OK, intent);
+                finish();
+            }
+        });
 
     }
 }
