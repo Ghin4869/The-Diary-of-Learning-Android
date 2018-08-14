@@ -77,3 +77,5 @@ public class SecondActivity extends AppCompatActivity {
 
     }
 }
+2.学习总结
+学至《第一行代码》2.3节Page53，onActivityResult()方法和onBackPressed()重写失败，但是功能仍可正常执行，隐式intent并未弄测试，留待今后
