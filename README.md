@@ -31,14 +31,12 @@ public class FirstActivity extends AppCompatActivity {
             default:
         }
         return true;
-        //        return super.onOptionsItemSelected(item);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
-//        return super.onCreateOptionsMenu(menu);
     }
 
     @Override
@@ -51,15 +49,6 @@ public class FirstActivity extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-//                Toast.makeText(FirstActivity.this, "You clicked Button 1", Toast.LENGTH_SHORT).show();   第一次修改
-//                Intent intent=new Intent(FirstActivity.this, SecondActivity.class);     //显式Intent
-//                startActivity(intent);
-//                  Intent intent=new Intent("com.example.activitytest.ACTION_START");   //隐式Intent
-//                  startActivity(intent);
-//                  String data="Hello SecondActivity";               //第二次修改
-//                  Intent intent=new Intent(FirstActivity.this, SecondActivity.class);
-//                  intent.putExtra("extra_data", data);
-//                  startActivity(intent);
                 Intent intent=new Intent(FirstActivity.this, FirstActivity.class);
                 startActivity(intent);
         }
