@@ -2,7 +2,8 @@
 基于《第一行代码》第二版的学习经历
 ## 第一次学习
 1.代码
-### FirstActivity
+### ActivityTest
+#### FirstActivity
 package com.example.activitytest;
 
 import android.content.Intent;
@@ -55,7 +56,7 @@ public class FirstActivity extends AppCompatActivity {
         });
     }
 }
-### SecondActivity
+#### SecondActivity
 package com.example.activitytest;
 
 import android.content.Intent;
